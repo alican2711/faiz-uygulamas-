@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class faizz {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int anapara,vade ;
+        System.out.println("lütfen anaparanızı giriniz:");
+        anapara = scanner.nextInt();
+        System.out.println("lütfen vadeyi giriniz");
+        vade = scanner.nextInt();
+
+        double toplampara = anapara ;
+        double faizOranı = 0.06;
+        for (int i = 1 ; i<vade ; i++){
+            toplampara = (toplampara * faizOranı)+ anapara;
+            System.out.println(i + "yılın sonunda :"+ toplampara);
+        }
+    }
+}
